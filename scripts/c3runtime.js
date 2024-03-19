@@ -4190,6 +4190,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Exps.int,
 		C3.Plugins.System.Exps.random
