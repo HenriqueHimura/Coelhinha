@@ -4189,16 +4189,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.Else,
-		C3.Behaviors.Timer.Cnds.IsTimerRunning,
-		C3.Plugins.System.Cnds.Every,
-		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.System.Exps.choose,
-		C3.Behaviors.Timer.Cnds.OnTimer,
-		C3.Plugins.System.Exps.int,
-		C3.Plugins.System.Exps.random,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
-		C3.Plugins.Sprite.Acts.StartAnim,
-		C3.Behaviors.Timer.Acts.StartTimer
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Exps.int,
+		C3.Plugins.System.Exps.random
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4340,12 +4334,6 @@ self.C3_ExpressionFuncs = [
 		() => "vaginal",
 		() => "boquete",
 		() => "chupada",
-		() => "timer",
-		() => 0.08,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("anal", "vaginal", "boquete", "chupada");
-		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
